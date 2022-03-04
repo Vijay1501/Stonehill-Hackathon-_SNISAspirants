@@ -15,23 +15,47 @@
 	text-align: center;
 	border: 1px solid #000000;
 }
+.auto-style4 {
+	font-size: xx-large;
+}
 </style>
+<script type="text/javascript">
+<!--
+function FP_swapImg() {//v1.0
+ var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
+ n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
+ elm.$src=elm.src; elm.src=args[n+1]; } }
+}
+
+function FP_preloadImgs() {//v1.0
+ var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
+ for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
+}
+
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+// -->
+</script>
 </head>
 
-<body style="background-color: #FFCCCC">
+<body style="background-color: #FFCCCC" onload="FP_preloadImgs(/*url*/'button6.jpg',/*url*/'button7.jpg',/*url*/'button9.jpg',/*url*/'buttonA.jpg',/*url*/'buttonC.jpg',/*url*/'buttonD.jpg')">
 
 <div style="height: 649px">
 	<div style="height: 70px" 
 	     style="background-color:#FFCCFF" >
-		<img alt="" height="70px" src="../Downloads/ecd-removebg-preview.png" width="125px" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-		&nbsp;<span data-lucid-content="{&quot;t&quot;:&quot;Early chilhood development &quot;,&quot;m&quot;:[{&quot;s&quot;:0,&quot;n&quot;:&quot;a&quot;,&quot;v&quot;:&quot;center&quot;},{&quot;s&quot;:0,&quot;n&quot;:&quot;c&quot;,&quot;v&quot;:&quot;333333ff&quot;,&quot;e&quot;:27},{&quot;s&quot;:0,&quot;n&quot;:&quot;s&quot;,&quot;v&quot;:53.55555555555548,&quot;e&quot;:27}]}" data-lucid-type="application/vnd.lucid.text"><span style="text-align:center;color:#333333;font-size:40.16666666666661px;">Early 
-		chilhood development </span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		
-		<button name="Abutton1" style="width: 88px; height: 29px;">Home</button>
-		<button name="Abutton1" style="width: 98px; height: 29px;">Activities</button>
-		<button name="Abutton1" style="width: 105px; height: 29px;">Contact us </button>
-
-		<br />
+		<img alt="" height="70" src="../ecd-removebg-preview.png" width="119" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+		&nbsp;<span data-lucid-content="{&quot;t&quot;:&quot;Early chilhood development &quot;,&quot;m&quot;:[{&quot;s&quot;:0,&quot;n&quot;:&quot;a&quot;,&quot;v&quot;:&quot;center&quot;},{&quot;s&quot;:0,&quot;n&quot;:&quot;c&quot;,&quot;v&quot;:&quot;333333ff&quot;,&quot;e&quot;:27},{&quot;s&quot;:0,&quot;n&quot;:&quot;s&quot;,&quot;v&quot;:53.55555555555548,&quot;e&quot;:27}]}" data-lucid-type="application/vnd.lucid.text"><span style="text-align:center;color:#333333;" class="auto-style4">EARLY 
+		CHILDHOOD DEVELOPMENT</span><span style="text-align:center;color:#333333;font-size:40.16666666666661px;"> </span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../eng_%20home/home%20page.htm"><img id="img1" alt="HOME" height="20" onmousedown="FP_swapImg(1,0,/*id*/'img1',/*url*/'button7.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img1',/*url*/'button5.jpg')" onmouseover="FP_swapImg(1,0,/*id*/'img1',/*url*/'button6.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img1',/*url*/'button6.jpg')" src="button5.jpg" style="border: 0" width="100" /><!-- MSComment="ibutton" fp-style="fp-btn: Glow Rectangle 9" fp-title="HOME" --></a>&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="../Activity%20Page.html">
+		<img id="img2" alt="Activites" height="20" onmousedown="FP_swapImg(1,0,/*id*/'img2',/*url*/'buttonA.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img2',/*url*/'button8.jpg')" onmouseover="FP_swapImg(1,0,/*id*/'img2',/*url*/'button9.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img2',/*url*/'button9.jpg')" src="button8.jpg" style="border: 0" width="100" /><!-- MSComment="ibutton" fp-style="fp-btn: Glow Rectangle 9" fp-title="Activites" --></a>&nbsp;&nbsp;&nbsp;
+		<img id="img3" alt="Contact Us" height="20" onmousedown="FP_swapImg(1,0,/*id*/'img3',/*url*/'buttonD.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img3',/*url*/'buttonB.jpg')" onmouseover="FP_swapImg(1,0,/*id*/'img3',/*url*/'buttonC.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img3',/*url*/'buttonC.jpg')" src="buttonB.jpg" style="border: 0" width="100" /><!-- MSComment="ibutton" fp-style="fp-btn: Glow Rectangle 9" fp-title="Contact Us" --><br />
 		<table class="auto-style1" style="width: 101%; height: 539px">
 			<tr>
 				<td class="auto-style3">
